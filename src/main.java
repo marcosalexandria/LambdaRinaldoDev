@@ -11,7 +11,7 @@ public class main {
 		 //.limit(1)	//define o limite de dados a serem processados (vai processar só o primeiro registro)
 		 .distinct() // não permite o processamento de dados repitidos (hashcode equals)
 		 .filter(e -> e % 2 == 0)	//um filtro mais especifico
-		 .map(e -> e * 2) //o mep não é um filtro como os de cime, ele é para modificar os registros
+		 .map(e -> e * 2) //o mep não é um filtro como os de cime, ele é para modificar os registros *não modifica a lista original
 		 .forEach(System.out::println);
 
 	}
