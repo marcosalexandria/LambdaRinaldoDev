@@ -5,8 +5,8 @@ public class main {
 	public static void main(String[] args) {
 		
 		String s = "1";
-		Optional<Integer> numero = converteEmNumero(s);
-		numero.ifPresent(n -> System.out.println(n));
+		Integer numero = converteEmNumero(s).orElse(6);
+		System.out.println(numero);
 		
 	}
 	
